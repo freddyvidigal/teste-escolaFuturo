@@ -1,0 +1,296 @@
+@import url(./reset.css);
+* body {
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: blue;
+  border-radius: 25px;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 2px;
+  padding: 2px;
+  gap: 20px;
+  font-size: 30px;
+
+}
+
+.logoimg {
+  margin: 1px;
+  padding: 1px;
+  width: 150px;
+  height: 150px;
+}
+
+.item-ul ul {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  margin: 5px;
+  padding: 2px;
+}
+
+.n2 {
+  margin: 5px;
+  padding: 2px;
+  text-decoration: none;
+  list-style: none;
+  line-height: 10px;
+  color: #4bd2e2;
+}
+
+.n2:hover {
+  color: white;
+}
+
+.n1 {
+  margin: 5px;
+  padding: 2px;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  line-height: 10px;
+}
+
+.n1:hover {
+  color: gray;
+}
+
+li {
+  list-style: none;
+}
+
+.parallax {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  /*background-repeat: no-repeat;*/
+  background-attachment: fixed;
+  font-size: 25px;
+  color: blue;
+
+}
+
+section {
+  height: 50vh;
+}
+
+#parallax-header {
+  background-image: url(/Assets/img/IMALAIA.jpeg)
+}
+
+#parallax-section1 {
+  background-image: url(/Assets/img/PRAIA\ NATURAL.jpeg);
+}
+
+#parallax-section2 {
+  background-image: url(/Assets/img/SERRA\ NEGRA.jpeg);
+}
+
+#parallax-section4 {
+  background-image: url(/Assets/img/tracoes-mais-famosas-do-mundo-2.jpg);
+}
+
+#parallax-section5 {
+  background-image: url(/Assets/img/aeroporto2.jpeg);
+}
+
+#parallax-section6 {
+  background-image: url(/Assets/img/footer.jpeg);
+}
+
+.serv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.icons {
+ width: 100px;
+  height: 100px;
+ 
+   right: 0;
+  position: relative;
+
+
+}
+#icon-whatz{
+  width: 100px;
+  height: 100px;
+ position: absolute;
+
+
+
+}
+
+.quemsou {
+  background-color: blue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.contatos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+}
+
+.contatos-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card1 {
+  display: grid;
+  place-items: center;
+
+  height: 500px;
+  width: 350px;
+
+  background: #2222220c;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 20px;
+  position: relative;
+
+
+}
+
+.card1::before {
+  content: "";
+
+  width: 350px;
+  height: 500px;
+
+  position: absolute;
+
+  background-image: url(/Assets/img/transferir.jpeg);
+  background-repeat: space;
+  border-radius: 20px;
+  z-index: -1;
+
+  transition: 0.8s;
+
+  animation: animacaColorida 4s linear infinite;
+
+}
+
+.card1:hover::before {
+  width: 380px;
+  height: 550px;
+  animation: animacaColorida 10s linear infinite;
+}
+
+@keyframes animacaColorida {
+  0% {
+    width: 100px;
+    height: 100px;
+  }
+
+
+
+  50% {
+    width: 500px;
+    height: 600px;
+    filter: rotate(360deg);
+  }
+}
+
+.contatos img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.Buscar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.Buscar h2 {
+  color: white;
+}
+
+.Buscar-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.buscar1 {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 400px;
+  margin: 10px;
+  padding: 10px;
+  background-color: blue;
+}
+
+.formulario {
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+form {
+  /* Apenas para centralizar o form na página */
+  margin: 0 auto;
+  width: 100wh;
+  /* Para ver as bordas do formulário */
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 1em;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+}
+
+.nameempr {
+  display: flex;
+  align-items: center;
+  text-align: center
+}
+
+.emblema {
+  width: 50px;
+  height: 50px;
+}
